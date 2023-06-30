@@ -1,0 +1,32 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #070605;
+    color: #F5F5EF;
+
+    /* Border just for placement */
+    border: 2px solid gold;
+  }
+  
+  .view-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Delete later */
+    border: 2px solid orange
+  }
+  
+
+.view-container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Delete later */
+    border: 2px solid coral;
+}
