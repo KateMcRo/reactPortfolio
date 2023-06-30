@@ -3,14 +3,19 @@ import selfie from '../../assets/selfie.jpeg';
 
 export default function About() {
     return(
-        <div id="container"> {/* full widht full height flex */}
+        <div id="container">
             <div id="profile-box">
                 <h1>Hello I'm</h1>
-                <img src={selfie} alt="Kate Rogers"></img>
+                <div className="image-container">
+                    <img src={selfie} alt="Kate Rogers"></img>
+                    <div className="circle-overlay"></div>
+                </div>    
                 <h2>Kate Rogers</h2>
-                <h3>Web Developer</h3>
-            </div> {/* flex flex column */}
-            <div id="group-box"> {/* flex fflex column */}
+                <div class="right">
+                    <h3>Web Developer</h3>
+                </div>
+            </div>
+            <div id="group-box">
                 <div id="title-box">
                     <h4>ABOUT ME</h4>
                 </div>
