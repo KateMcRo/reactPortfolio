@@ -1,0 +1,67 @@
+@import url('https://fonts.cdnfonts.com/css/lemon-tuesday');
+@import url('https://fonts.cdnfonts.com/css/tt-drugs-trial');
+
+#container {
+    display: flex;
+}
+
+#profile-box {
+    background-color: #FF6D5F;
+    width: 25vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px 10px #545454;
+    margin-right: 2rem;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    border-top-right-radius: 125px;
+}
+
+h2 {
+    font-family: 'Lemon Tuesday', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: small;
+}
+
+#group-box {
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
+}
+
+#title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #F5F5EF;
+    color: #E1CEBF;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    height: 15vh;
+    font-size: 50px;
+    font-family: 'TT Drugs Trl Cnd', sans-serif;
+}
+
+#about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #A4377A;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 50vw;
+    height: 65vh;
+}
+
+p {
+    margin: 20px;
+    font-size: x-large;
+    font-family: Arial Narrow, sans-serif;
+}
