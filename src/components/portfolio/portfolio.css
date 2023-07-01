@@ -1,0 +1,15 @@
+#portfolioBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem; 
+  }
+
+h1 {
+    font-family: 'TT Drugs Trl Cnd', sans-serif;
+}

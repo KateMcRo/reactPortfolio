@@ -7,7 +7,7 @@ export default function About() {
             <div id="profile-box">
                 <h1>Hello I'm</h1>
                 <div className="image-container">
-                    <img src={selfie} alt="Kate Rogers"></img>
+                    <img id="aboutImg" src={selfie} alt="Kate Rogers"></img>
                     <div className="circle-overlay"></div>
                 </div>    
                 <h2>Kate Rogers</h2>

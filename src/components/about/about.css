@@ -35,7 +35,7 @@
 }
   
 
-img {
+#aboutImg {
     width: 70%;
     height: auto;
     border-top-left-radius: 125px;
@@ -87,6 +87,6 @@ h2 {
 
 p {
     margin: 20px;
-    font-size: x-large;
+    font-size: 1.75vw;
     font-family: Arial Narrow, sans-serif;
 }
