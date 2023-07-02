@@ -23,3 +23,7 @@
 .navbar-item:active {
     font-weight: bold;
 }
+
+.selected {
+    font-weight: bold;
+}

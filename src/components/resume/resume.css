@@ -10,11 +10,14 @@
     width: 20vw;
     height: 100%;
     color: black;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 #skills {
     color: #A4377A;
     font-size: xx-large;
+    margin-top: 2rem;
 }
 
 li {
@@ -29,6 +32,8 @@ li {
     background-color: #E1CEBF;
     width: 35vw;
     height: 100%;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
 }
 
 #resumeImg {
@@ -49,6 +54,8 @@ li {
     background-color: #B97141;
     width: 20vw;
     height: 100%;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 #msg {
