@@ -1,0 +1,86 @@
+#contentBox {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+#leftSide {
+    margin-right: 1rem;
+    width: 38vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact {
+    font-weight: normal;
+    font-size: 6rem;
+    color: #A4377A;
+    margin-block-start: 0;
+}
+
+#formBox {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    width: 38vw;
+    height: 50vh;
+    border: 2px solid goldenrod;
+}
+
+input {
+    padding: .75rem;
+    width: 36vw;
+    border-radius: 15px;
+    font-family: 'TT Drugs Trl Cnd', sans-serif;
+    background-color: #F5F5EF;
+}
+
+textarea {
+    padding: .75rem;
+    width: 36vw;
+    border-radius: 15px;
+    font-family: 'TT Drugs Trl Cnd', sans-serif;
+    background-color: #F5F5EF;
+}
+
+.submit {
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 12vw;
+    border-radius: 15px;
+    font-family: 'TT Drugs Trl Cnd', sans-serif;
+    color: #F5F5EF;
+    background-color: #B97141;
+    border: none;
+    cursor: pointer;
+}
+
+#rightSide {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: right;
+    width: 38vw;
+    height: auto;
+    
+}
+
+.bgImg {
+    width: 20vw;
+}
+
+.selfie {
+    position: absolute;
+    top: 53%; 
+    left: 65%; 
+    transform: translate(-50%, -50%);
+    width: 20vw; 
+    height: 20vw; 
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border: 2px solid #FF6D5F;
+}
