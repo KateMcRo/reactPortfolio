@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.skillsBox {
+    background-color: #F5F5EF;
+    width: 20vw;
+    height: 100%;
+}
+
+.resumeBox {
+    background-color: #E1CEBF;
+    width: 35vw;
+    height: 100%;
+}
+
+.signBox {
+    background-color: #B97141;
+    width: 20vw;
+    height: 100%;
+}

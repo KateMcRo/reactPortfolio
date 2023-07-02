@@ -11,9 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Delete later */
-    border: 2px solid orange
   }
   
 
@@ -23,7 +20,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* Delete later */
-    border: 2px solid coral;
 }

@@ -1,7 +1,18 @@
+import "./resume.css"
+
 export default function Resume() {
     return(
-        <div>
-         I am the Resume View
+        <div class="container">
+            <div class="skillsBox">
+
+            </div>
+            <div class="resumeBox">
+
+            </div>
+            <div class="signBox">
+
+            </div>
+
         </div>
         )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bgImg from "../../assets/md-bg.png";
+import bgImg from "../../assets/lt-bg.png";
 import selfie from "../../assets/selfie.jpeg";
 import "./contact.css";
 import emailjs from 'emailjs-com';
@@ -8,26 +8,51 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (name.trim() === '') {
+      errors.name = 'Name is required';
+    }
+
+    if (email.trim() === '') {
+      errors.email = 'Email is required';
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        errors.email = 'Invalid email address';
+      }
+    }
+
+    setErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
-    // Send email using EmailJS
-    emailjs.send('contact_service', 'contact_form', {
-      from_name: name,
-      from_email: email,
-      message: message,
-    }, 'ovqHd-dml7Q78LFzp')
-      .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-        // Clear form fields after successful submission
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch((error) => {
-        console.error('Email could not be sent:', error);
-      });
+
+    if (validateForm()) {
+      // Send email using EmailJS
+      emailjs.send('contact_service', 'contact_form', {
+        from_name: name,
+        from_email: email,
+        message: message,
+      }, 'ovqHd-dml7Q78LFzp')
+        .then((response) => {
+          console.log('Email sent successfully!', response.status, response.text);
+          // Clear form fields after successful submission
+          setName('');
+          setEmail('');
+          setMessage('Message Sent.');
+          setErrors({});
+        })
+        .catch((error) => {
+          console.error('Email could not be sent:', error);
+        });
+    }
   };
 
   return (
@@ -43,6 +68,7 @@ export default function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
+            {errors.name && <span className="error">{errors.name}</span>}
             <input
               type="email"
               id="email"
@@ -50,6 +76,7 @@ export default function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            {errors.email && <span className="error">{errors.email}</span>}
             <textarea
               id="message"
               placeholder="MESSAGE"
