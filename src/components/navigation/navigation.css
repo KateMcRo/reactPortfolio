@@ -1,27 +1,22 @@
 #navContainer {
-    background-color: #070605;
+    background-color: var(--drk);
     width: 100vw;
 }
 
 #navbar {
-    display: flex;
     justify-content: flex-start;
     padding: 20px;
-    font-family: Arial Narrow, sans-serif;
+    font-family: var(--font3);
 }
 
 .navbar-item {
-    color: #F5F5EF;
+    color: var(--wht);
     cursor: pointer;
     margin-right: 20px;
 }
 
 .navbar-item:hover {
-    color: #E1CEBF
-}
-
-.navbar-item:active {
-    font-weight: bold;
+    color: var(--lt)
 }
 
 .selected {

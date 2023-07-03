@@ -1,90 +1,60 @@
 #contentBox {
-    display: flex;
-    width: 100vw;
     height: 80vh;
-    justify-content: space-between;
-}
-
-#leftSide {
-    margin-right: 1rem;
+  }
+  
+  #leftSide,
+  #rightSide {
     width: 38vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  }
+  
+  #leftSide {
+    margin-right: 1rem;
     align-items: start;
-}
-
-.contact {
-    font-weight: normal;
-    font-size: 6rem;
-    color: #A4377A;
-    margin-block-start: 0;
-}
-
-#formBox {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-    width: 38vw;
-    height: 50vh;
-}
-
-input {
-    padding: .75rem;
-    width: 36vw;
-    border-radius: 15px;
-    font-family: 'TT Drugs Trl Cnd', sans-serif;
-    background-color: #F5F5EF;
-}
-
-textarea {
-    padding: .75rem;
-    width: 36vw;
-    height: 8vh;
-    border-radius: 15px;
-    font-family: 'TT Drugs Trl Cnd', sans-serif;
-    background-color: #F5F5EF;
-}
-
-.submit {
-    margin-top: 1rem;
-    padding: .5rem;
-    width: max-content;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 15px;
-    font-family: 'TT Drugs Trl Cnd', sans-serif;
-    color: #F5F5EF;
-    background-color: #B97141;
-    border: none;
-    cursor: pointer;
-}
-
-#rightSide {
-    display: flex;
-    align-items: center;
+  }
+  
+  #rightSide {
     margin-left: 1rem;
     justify-content: right;
-    width: 38vw;
-    height: auto;
-    
-}
-
-.bgImg {
+  }
+  
+  .contact {
+    font-weight: normal;
+    font-size: 80px;
+    color: var(--mag);
+    margin-block-start: 0;
+  }
+  
+  #formBox {
+    padding-bottom: 2rem;
+  }
+  
+  textarea {
+    height: 8vh;
+  }
+  
+  .submit {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    width: max-content;
+    border-radius: 15px;
+    color: var(--wht);
+    background-color: var(--mid);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bgImg {
     width: 24vw;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-}
-
-.selfie {
-    position: absolute;
-    top: 53%; 
-    left: 62%; 
-    transform: translate(-50%, -50%);
-    width: 20vw; 
-    height: 20vw; 
+  }
+  
+  .selfie {
+    top: 53%;
+    left: 62%;
+    width: 20vw;
+    height: 20vw;
     border-top-right-radius: 150px;
     border-top-left-radius: 150px;
-    border: 2px solid #FF6D5F;
-}
+    border: 2px solid var(--org);
+  }
+  

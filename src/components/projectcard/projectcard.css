@@ -1,16 +1,9 @@
 .project {
     width: 25vw;
     height: auto;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
     filter: grayscale(100);
 }
 
 .project:hover {
     filter: grayscale(0);
-}
-
-.linksBox {
-    display: flex;
-    justify-content: space-between;
 }

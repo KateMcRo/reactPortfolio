@@ -1,19 +1,16 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #070605;
+    background-color: var(--drk);
     height: 10vh;
 }
 
 .footer i {
-    margin: 0 10px;
+    margin: 10px;
   }
 
 .footer a {
-    color: #F5F5EF;
+    color: var(--wht);
 }
 
 .footer a:hover {
-    color: #E1CEBF;
+    color: var(--lt);
 }

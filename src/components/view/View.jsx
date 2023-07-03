@@ -7,8 +7,8 @@ import "./view.css"
 
 export default function View({view}) {
     return (
-        <div className="page-container">
-            <div className="view-container">
+        <div className="page flex container">
+            <div className="view container">
                 {view === "about" && (
                     <About />
                 )}
