@@ -13,6 +13,10 @@
   --font3: 'Arial Narrow', sans-serif;
 }
 
+body {
+  background-color: var(--drk);
+}
+
 a {
   color: var(--wht);
   font-family: var(--font1);
@@ -75,3 +79,20 @@ a:hover {
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
+/*** Mobile CSS ***/
+
+  /** Tablets **/
+  @media only screen and (min-width: 481px) and (max-width: 1024px)  {
+    .body {
+      font-size: 22px;
+    }
+  }
+
+ /** Smartphones **/
+@media only screen and (max-width: 480px) {
+  .body {
+    font-size: 12px;
+    margin: 1rem;
+  }
+} 

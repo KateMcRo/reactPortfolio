@@ -60,7 +60,39 @@
   
   .body {
     margin: 40px;
-    font-size: 1.75vw;
+    font-size: 25px;
     font-family: var(--font3);
   }
   
+
+  /*** Mobile CSS ***/
+
+  /** Tablets **/
+  @media only screen and (min-width: 481px) and (max-width: 1024px)  {
+
+  #profile-box {
+    justify-content: center;
+  }
+}
+
+/** Smartphones **/
+@media only screen and (max-width: 480px) {
+
+  #profile-box {
+    justify-content: center;
+  }
+
+  .circle-overlay {
+    display: none;
+  }
+
+  #aboutImg {
+    width: 70%;
+    height: auto;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: scaleX(-1);
+    margin-left: 0rem;
+  }
+
+}

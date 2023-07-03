@@ -58,3 +58,6 @@
     border: 2px solid var(--org);
   }
   
+.sending {
+  font-size: xx-large;
+}

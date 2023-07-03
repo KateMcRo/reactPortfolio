@@ -1,16 +1,7 @@
 .footer {
-    background-color: var(--drk);
     height: 10vh;
 }
 
 .footer i {
     margin: 10px;
   }
-
-.footer a {
-    color: var(--wht);
-}
-
-.footer a:hover {
-    color: var(--lt);
-}

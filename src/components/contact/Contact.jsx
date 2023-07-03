@@ -9,6 +9,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false)
 
   const validateForm = () => {
     const errors = {};
@@ -35,22 +36,23 @@ export default function Contact() {
     event.preventDefault();
   
     if (validateForm()) {
+      setLoading(true)
       try {
         // Send email using EmailJS
-        const response = await emailjs.send('contact_service', 'contact_form', {
+        await emailjs.send('contact_service', 'contact_form', {
           from_name: name,
           from_email: email,
           message: message,
         }, 'ovqHd-dml7Q78LFzp');
-  
-        console.log('Email sent successfully!', response.status, response.text);
-        // Clear form fields after successful submission
-        setName('');
-        setEmail('');
-        setMessage('Message Sent.');
-        setErrors({});
+          setMessage('Message Sent.');
       } catch (error) {
         console.error('Email could not be sent:', error);
+        setMessage('Message Failed to Send.');
+      } finally {
+        setName('');
+        setEmail('');
+        setErrors({});
+        setLoading(false)
       }
     }
   };
@@ -60,7 +62,8 @@ export default function Contact() {
       <div id="leftSide" className="flex column">
         <h1 className="contact">CONTACT<br />ME</h1>
         <div id="formBox" className="flex column">
-          <form onSubmit={handleSubmit}>
+          {loading && (<div className='sending'><i class="fa-solid fa-message fa-beat-fade"></i> Sending Message...</div>)}
+          {!loading && (<form onSubmit={handleSubmit}>
             <input
               type="text"
               id="name"
@@ -87,7 +90,7 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             />
             <button type="submit" className="submit basic">SUBMIT</button>
-          </form>
+          </form>)}
         </div>
       </div>
       <div id="rightSide" className="flex container center">
