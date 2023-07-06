@@ -14,15 +14,19 @@ Website to share projects I've worked on, my qualifications, and connect with pe
 ## Usage
 
 Navigation is simple and intuitive. Cursor and hover effects were added to help with link visibility. The current section is bolded in the nav bar. Social links are available in the footer.
+
 ![About Section](/src/assets/kr-about.png)
 
 Images and titles link to the live project and the github icons link to the corresponding repos. Hover effects were added to help with visibility.
+
 ![Portfolio Section](/src/assets/kr-portfolio.png)
 
 Once visitors submit the form, they will see a loading screen and when it completes, I will receive an email with their message. In turn they will receive an email letting them know their message sent and asking for 48 hours to respond.
+
 ![Contact Section](/src/assets/kr-contact.png)
 
 Visiters can download a PDF of my resume by clicking on the picture, or the icon and resume text below.
+
 ![Resume Section](/src/assets/kr-resume.png)
 
 ## License
