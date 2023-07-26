@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.46ad1bb7.css",
-    "main.js": "/reactPortfolio/static/js/main.1b32f27a.js",
+    "main.js": "/reactPortfolio/static/js/main.c9f90210.js",
     "static/media/KateRogers_Resume.png": "/reactPortfolio/static/media/KateRogers_Resume.75fc0f0fc98e2aaf78dc.png",
     "static/media/lt-bg.png": "/reactPortfolio/static/media/lt-bg.27ac6c0139d68a72d23f.png",
+    "static/media/plantastic.png": "/reactPortfolio/static/media/plantastic.4de4f62c6c09e4c5bc46.png",
     "static/media/pageTurner.png": "/reactPortfolio/static/media/pageTurner.e1df4051eae76de98de8.png",
     "static/media/weatherApp.png": "/reactPortfolio/static/media/weatherApp.20042bcb59e993ee6acf.png",
     "static/media/passwordGen.png": "/reactPortfolio/static/media/passwordGen.a10c2904c1e3f715b07c.png",
     "static/media/codingQuiz.png": "/reactPortfolio/static/media/codingQuiz.4e797003b31dc0f9e519.png",
     "static/media/creativeJuice.png": "/reactPortfolio/static/media/creativeJuice.83be8c68a5f43a058cd9.png",
     "static/media/selfie.jpeg": "/reactPortfolio/static/media/selfie.467aa0da2107a08fe909.jpeg",
-    "static/media/horiseon.png": "/reactPortfolio/static/media/horiseon.686f3a71c44459ea80c6.png",
     "index.html": "/reactPortfolio/index.html",
     "main.46ad1bb7.css.map": "/reactPortfolio/static/css/main.46ad1bb7.css.map",
-    "main.1b32f27a.js.map": "/reactPortfolio/static/js/main.1b32f27a.js.map"
+    "main.c9f90210.js.map": "/reactPortfolio/static/js/main.c9f90210.js.map"
   },
   "entrypoints": [
     "static/css/main.46ad1bb7.css",
-    "static/js/main.1b32f27a.js"
+    "static/js/main.c9f90210.js"
   ]
 }
