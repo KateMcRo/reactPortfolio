@@ -1,6 +1,10 @@
 #main {
     height: 100%;
   }
+
+  #mobile {
+    display: none;
+  }
   
   #profile-box {
     align-items: flex-start;
@@ -8,7 +12,7 @@
     background-color: var(--org);
     width: 25vw;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     margin-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -28,9 +32,9 @@
   }
   
   #aboutImg {
-    width: 70%;
+    width: 15rem;
     height: auto;
-    border-top-left-radius: 125px;
+    border-top-left-radius: 7.8125rem;
     transform: scaleX(-1);
     margin-left: 2rem;
   }
@@ -49,7 +53,7 @@
     background-color: var(--wht);
     color: var(--lt);
     height: 15vh;
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   
   #about-box {
@@ -59,40 +63,108 @@
   }
   
   .body {
-    margin: 40px;
-    font-size: 25px;
+    margin: 2.5rem;
+    font-size: 1.5625rem;
     font-family: var(--font3);
   }
   
 
   /*** Mobile CSS ***/
 
-  /** Tablets **/
-  @media only screen and (min-width: 481px) and (max-width: 1024px)  {
+  /** Phones & Small Tablets **/
+  @media screen and (max-width: 540px) {
+    #main {
+      display: none;
+    }
 
-  #profile-box {
-    justify-content: center;
+    #m-title-box {
+      display: none;
+    }
+
+    #mobile {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+
+    #m-profile-box {
+      display: flex;
+      background-color: var(--org);
+      border-top-left-radius: 1.875rem;
+      border-bottom-right-radius: 1.875rem;
+      align-items: center;
+    }
+
+    #aboutImg {
+      display: block;
+      width: 9rem;
+      height: 9rem;
+      margin-left: 1rem;
+      border-top-right-radius: 5rem;
+      border-top-left-radius: 5rem;
+      padding: 1rem;
+    }
+
+    .text-container {
+      flex-direction: column;
+    }
+
+    .signature {
+      font-size: 2rem;
+    }
+
+    .basic {
+      font-size: 1rem;
+    }
+
+    #m-about-box {
+      margin-top: .5rem;
+      background-color: var(--mag);
+    }
+    .body {
+      font-size: 1rem;
+      margin: 1rem;
+
+    }
+
+    /* Targeting taller phones */
+    @media (min-width: 390px) {
+      #m-profile-box {
+        border-radius: 1.875rem;
+      }
+
+      #m-title-box {
+        display: flex;
+        background-color: var(--wht);
+        color: var(--lt);
+        height: 10vh;
+        margin-top: .5rem;
+        font-size: 3.125rem;
+        border-top-left-radius: 1.875rem;
+        border-bottom-right-radius: 1.875rem;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      h4 {
+        margin: 0;
+      }
+    }
+
+    /* Targeting Galaxy Fold */
+    @media screen and (max-width: 280px) {
+      .body {
+        font-size: .875rem;
+      }
+      #aboutImg {
+        display: none;
+      }
+  
+      #m-profile-box {
+        justify-content: center;
+      }
+    }
   }
-}
 
-/** Smartphones **/
-@media only screen and (max-width: 480px) {
-
-  #profile-box {
-    justify-content: center;
-  }
-
-  .circle-overlay {
-    display: none;
-  }
-
-  #aboutImg {
-    width: 70%;
-    height: auto;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    transform: scaleX(-1);
-    margin-left: 0rem;
-  }
-
-}
