@@ -44,8 +44,13 @@ export default function About() {
       {/* Mobile View */}
       <div id="mobile">
         {/* Coral Box */}
-        <div id="m-profile-box" className="flex ">
-          <img id="aboutImg" src={selfie} alt="Kate Rogers"></img>
+        <div id="m-profile-box" className="flex t-profile-box">
+          <img
+            id="aboutImg"
+            className="t-aboutImg"
+            src={selfie}
+            alt="Kate Rogers"
+          ></img>
           <div className="text-container">
             <h2 className="signature">Kate Rogers</h2>
             <h3 className="basic">Web Developer</h3>

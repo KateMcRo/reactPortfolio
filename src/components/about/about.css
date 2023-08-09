@@ -23,8 +23,9 @@
   }
   
   .circle-overlay {
-    top: 27%;
-    left: 82%;
+    margin-left: 2.5vw;
+    top: 4vh;
+    left: 15vw;
     width: 7.5vw;
     height: 7.5vw;
     border-radius: 50%;
@@ -32,9 +33,9 @@
   }
   
   #aboutImg {
-    width: 15rem;
+    width: 15vw;
     height: auto;
-    border-top-left-radius: 7.8125rem;
+    border-top-left-radius: 9vw;
     transform: scaleX(-1);
     margin-left: 2rem;
   }
@@ -64,7 +65,7 @@
   
   .body {
     margin: 2.5rem;
-    font-size: 1.5625rem;
+    font-size: 1.75vw;
     font-family: var(--font3);
   }
   
@@ -73,6 +74,13 @@
 
   /** Phones & Small Tablets **/
   @media screen and (max-width: 540px) {
+    .t-profile-box {
+      display: none;
+    }
+    .t-aboutImg {
+      display: none;
+    }
+
     #main {
       display: none;
     }
@@ -168,3 +176,9 @@
     }
   }
 
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+  .body {
+    font-size: 1.75vh;
+
+  }
+}
