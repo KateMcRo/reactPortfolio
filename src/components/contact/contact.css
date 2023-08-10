@@ -20,7 +20,7 @@
   
   .contact {
     font-weight: normal;
-    font-size: 80px;
+    font-size: 5rem;
     color: var(--mag);
     margin-block-start: 0;
   }
@@ -31,6 +31,13 @@
   
   textarea {
     height: 8vh;
+  }
+
+  .input {
+    padding: .75rem;
+    width: 36vw;
+    border-radius: 0.9375rem;
+    background-color: var(--wht);
   }
   
   .submit {
@@ -60,4 +67,22 @@
   
 .sending {
   font-size: xx-large;
+}
+
+@media screen and (max-width: 820px) {
+  .selfie {
+    display: none;
+  }
+
+  .bgImg {
+    display: none;
+  }
+
+  #leftSide {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
 }
