@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/reactPortfolio/static/css/main.46ad1bb7.css",
-    "main.js": "/reactPortfolio/static/js/main.c9f90210.js",
-    "static/media/KateRogers_Resume.png": "/reactPortfolio/static/media/KateRogers_Resume.75fc0f0fc98e2aaf78dc.png",
+    "main.css": "/reactPortfolio/static/css/main.09a990bf.css",
+    "main.js": "/reactPortfolio/static/js/main.2ccb6d12.js",
     "static/media/lt-bg.png": "/reactPortfolio/static/media/lt-bg.27ac6c0139d68a72d23f.png",
+    "static/media/resumeSS.png": "/reactPortfolio/static/media/resumeSS.411c3fdedcea3d2fd032.png",
     "static/media/plantastic.png": "/reactPortfolio/static/media/plantastic.4de4f62c6c09e4c5bc46.png",
     "static/media/pageTurner.png": "/reactPortfolio/static/media/pageTurner.e1df4051eae76de98de8.png",
     "static/media/weatherApp.png": "/reactPortfolio/static/media/weatherApp.20042bcb59e993ee6acf.png",
@@ -12,11 +12,11 @@
     "static/media/creativeJuice.png": "/reactPortfolio/static/media/creativeJuice.83be8c68a5f43a058cd9.png",
     "static/media/selfie.jpeg": "/reactPortfolio/static/media/selfie.467aa0da2107a08fe909.jpeg",
     "index.html": "/reactPortfolio/index.html",
-    "main.46ad1bb7.css.map": "/reactPortfolio/static/css/main.46ad1bb7.css.map",
-    "main.c9f90210.js.map": "/reactPortfolio/static/js/main.c9f90210.js.map"
+    "main.09a990bf.css.map": "/reactPortfolio/static/css/main.09a990bf.css.map",
+    "main.2ccb6d12.js.map": "/reactPortfolio/static/js/main.2ccb6d12.js.map"
   },
   "entrypoints": [
-    "static/css/main.46ad1bb7.css",
-    "static/js/main.c9f90210.js"
+    "static/css/main.09a990bf.css",
+    "static/js/main.2ccb6d12.js"
   ]
 }
