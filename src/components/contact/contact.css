@@ -85,4 +85,11 @@
   .input {
     width: 100%;
   }
+
+  /* Targeting Galaxy Fold */
+    @media screen and (max-width: 280px) {
+      .contact {
+        font-size: 4rem;
+      }
+    }
 }

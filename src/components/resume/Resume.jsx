@@ -28,34 +28,61 @@ export default function Resume() {
   ];
 
   return (
-    <div className="containerBox flex space">
-      <div className="skillsBox roundLR">
-        <p id="skills" className="basic">
-          SUMMARY OF SKILLS
-        </p>
-        <ul className="basic">
-          {skill.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="resumeBox flex column center roundRL">
-        <img
-          src={resume}
-          id="resumeImg"
-          alt="Kate Rogers Resume"
-          onClick={onButtonClick}
-        ></img>
-        <div className="downloadBox" onClick={onButtonClick}>
-          <i className="fa-solid fa-file-arrow-down download"></i> RESUMÉ
+    <>
+      <div className="containerBox flex space">
+        <div className="skillsBox roundLR">
+          <p id="skills" className="basic">
+            SUMMARY OF SKILLS
+          </p>
+          <ul className="basic">
+            {skill.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="resumeBox flex column center roundRL">
+          <img
+            src={resume}
+            id="resumeImg"
+            alt="Kate Rogers Resume"
+            onClick={onButtonClick}
+          ></img>
+          <div className="downloadBox" onClick={onButtonClick}>
+            <i className="fa-solid fa-file-arrow-down download"></i> RESUMÉ
+          </div>
+        </div>
+        <div className="signBox flex column roundLR">
+          <p id="msg">I look forward to working with you in the future</p>
+          <p id="kr" className="signature">
+            - Kate Rogers
+          </p>
         </div>
       </div>
-      <div className="signBox flex column roundLR">
-        <p id="msg">I look forward to working with you in the future</p>
-        <p id="kr" className="signature">
-          - Kate Rogers
-        </p>
+      {/* Mobile View */}
+      <div id="mobile-resume">
+        <div className="m-skillsBox roundLR">
+          <p id="skills" className="basic">
+            Explore My Resume:
+          </p>
+        </div>
+        <div className="m-resumeBox flex column center roundRL">
+          <img
+            src={resume}
+            id="resumeImg"
+            alt="Kate Rogers Resume"
+            onClick={onButtonClick}
+          ></img>
+          <div className="downloadBox" onClick={onButtonClick}>
+            <i className="fa-solid fa-file-arrow-down download"></i> DOWNLOAD
+          </div>
+        </div>
+        <div className="m-signBox flex column roundLR">
+          <p id="msg">I look forward to working with you in the future</p>
+          <p id="kr" className="signature">
+            - Kate Rogers
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
